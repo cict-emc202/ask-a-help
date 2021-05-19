@@ -1,0 +1,203 @@
+[gd_scene load_steps=31 format=2]
+
+[ext_resource path="res://13.png" type="Texture" id=1]
+[ext_resource path="res://sprite-sheet-141x107.png" type="Texture" id=2]
+[ext_resource path="res://sprite-sheet-2-240x104.png" type="Texture" id=3]
+[ext_resource path="res://green.png" type="Texture" id=4]
+[ext_resource path="res://background.png" type="Texture" id=5]
+[ext_resource path="res://red.png" type="Texture" id=6]
+[ext_resource path="res://Main.gd" type="Script" id=7]
+
+[sub_resource type="AtlasTexture" id=37]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 214, 141, 107 )
+
+[sub_resource type="AtlasTexture" id=38]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 141, 214, 141, 107 )
+
+[sub_resource type="AtlasTexture" id=39]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 282, 214, 141, 107 )
+
+[sub_resource type="AtlasTexture" id=40]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 423, 214, 141, 107 )
+
+[sub_resource type="AtlasTexture" id=41]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 564, 214, 141, 107 )
+
+[sub_resource type="AtlasTexture" id=42]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 214, 141, 107 )
+
+[sub_resource type="AtlasTexture" id=23]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 141, 428, 141, 107 )
+
+[sub_resource type="AtlasTexture" id=24]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 428, 141, 107 )
+
+[sub_resource type="AtlasTexture" id=43]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 282, 214, 141, 107 )
+
+[sub_resource type="AtlasTexture" id=44]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 423, 214, 141, 107 )
+
+[sub_resource type="AtlasTexture" id=45]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 564, 214, 141, 107 )
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 42 ), SubResource( 23 ), SubResource( 24 ), SubResource( 43 ), SubResource( 44 ), SubResource( 45 ) ],
+"loop": false,
+"name": "Damaged",
+"speed": 8.0
+} ]
+
+[sub_resource type="AtlasTexture" id=46]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 240, 104 )
+
+[sub_resource type="AtlasTexture" id=47]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 240, 0, 240, 104 )
+
+[sub_resource type="AtlasTexture" id=48]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 480, 0, 240, 104 )
+
+[sub_resource type="AtlasTexture" id=49]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 720, 0, 240, 104 )
+
+[sub_resource type="AtlasTexture" id=50]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 960, 0, 240, 104 )
+
+[sub_resource type="AtlasTexture" id=51]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 0, 104, 240, 104 )
+
+[sub_resource type="AtlasTexture" id=52]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 240, 104, 240, 104 )
+
+[sub_resource type="AtlasTexture" id=53]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 480, 104, 240, 104 )
+
+[sub_resource type="AtlasTexture" id=54]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 720, 104, 240, 104 )
+
+[sub_resource type="AtlasTexture" id=55]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 960, 104, 240, 104 )
+
+[sub_resource type="SpriteFrames" id=12]
+animations = [ {
+"frames": [ SubResource( 46 ), SubResource( 47 ), SubResource( 48 ), SubResource( 49 ), SubResource( 50 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 51 ), SubResource( 52 ), SubResource( 53 ), SubResource( 54 ), SubResource( 54 ), SubResource( 55 ) ],
+"loop": true,
+"name": "Attack",
+"speed": 9.0
+} ]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 600.688, 296.049, 328.781, 418.699, 265.331, 177.419, 399.505, 143.433, 206.429, 476.052, 231.627, 435.734 ],
+"_edit_vertical_guides_": [ 1024.7, 509.693, 372.364, 458.039, 589.07, -874.656, 541.193, 757.9, 679.785, 614.269, 521.035, 390.003 ]
+}
+
+[node name="13" type="Sprite" parent="."]
+scale = Vector2( 1.60272, 1.25465 )
+texture = ExtResource( 1 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Slime" type="AnimatedSprite" parent="."]
+position = Vector2( 455.663, 326.608 )
+frames = SubResource( 6 )
+animation = "Damaged"
+
+[node name="Player" type="AnimatedSprite" parent="."]
+position = Vector2( 587.79, 289.284 )
+scale = Vector2( 1.33284, 1.93739 )
+frames = SubResource( 12 )
+animation = "Idle"
+
+[node name="PlayerHPBar" type="TextureProgress" parent="."]
+margin_left = 555.687
+margin_top = 158.002
+margin_right = 665.687
+margin_bottom = 198.002
+value = 100.0
+texture_under = ExtResource( 5 )
+texture_progress = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SlimeHPBar" type="TextureProgress" parent="."]
+margin_left = 400.781
+margin_top = 246.95
+margin_right = 510.781
+margin_bottom = 286.95
+value = 100.0
+texture_under = ExtResource( 5 )
+texture_progress = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AttackButton" type="Button" parent="."]
+margin_left = 443.928
+margin_top = 411.236
+margin_right = 577.928
+margin_bottom = 463.236
+text = "Attack"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="animation_finished" from="Slime" to="." method="_on_Slime_animation_finished"]
+[connection signal="animation_finished" from="Player" to="." method="_on_Player_animation_finished"]
+[connection signal="pressed" from="AttackButton" to="." method="_on_AttackButton_pressed"]
